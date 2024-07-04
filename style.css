@@ -1,0 +1,179 @@
+*,::after,::before{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+  }
+  body{
+    margin: 0 100px;
+    background-color:rgb(31, 32, 30);
+    background-image: url("u.jpg");
+    
+  }
+  .nav{
+    width: 100%;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0;
+  }
+  .nav .logo h1{
+    font-weight: 1000;
+    font-family:'Georgia';
+    font-size: 60px;
+    color:rgb(185, 42, 20);   
+  }
+  .nav .logo  b{
+    font-family:'Lucida Sans', 'Lucida Sans Regular';
+    color: pink;
+    font-size: 25px;
+  }
+  .nav ul{
+    display: flex;
+    list-style: none;
+  }
+  .nav ul li{
+    margin-left: 30px;
+    font-family: Calibri;
+  }
+  .nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    font-family:'Verdana';
+    font-size: 17px;
+  }
+   .nav ul .active::after{
+    content: '';
+    width:50%;
+    height:3px;
+    background-color:blue;
+    display: flex;
+    position: relative;
+    margin-left: 10px;
+  }
+  input{
+    cursor:pointer;
+    font-weight:600;
+    padding: 10px 23px;
+    background-color: rgb(15, 224, 85);
+    color: rgb(193, 34, 34); 
+    border-radius:5px;
+    margin-bottom: 5px;
+    margin-top:1px;
+    border:none;
+  }
+  .content{
+    display: grid;
+    grid-template-columns: 50% auto;
+    gap: 10px;
+    margin-top:10px;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .content .content-left{
+    display: block;
+    width: 100%;
+  }
+  .content .content-left .info{
+    display: flex;
+    flex-direction: column;
+    margin-bottom:10px;
+    color:pink;
+  }
+  .content .content-left .info h2{
+    font-size:45px;
+    font-family:'Lucida Sans';
+    margin-bottom:5px;
+    margin-top: 3px;
+    color:rgb(247, 94, 140);
+  }
+  .content .content-left .info p{
+    font-size: 23px;
+    line-height: 2pc;
+    margin-bottom: 30px;
+    font-family: sans-serif;
+  }
+  .content .content-left button {
+    padding: 10px 23px;
+    background-color: rgb(243, 42, 42);
+    color: rgb(196, 201, 203); 
+    border-radius:5px;
+    margin-bottom: 5px;
+    margin-top:1px;
+    border:none;
+    cursor: pointer;
+  }
+  .content .content-right{
+    display:inline-block;
+    width: 100%;
+  }
+  .content .content-right img{
+    width: 625px;
+    height:450px;
+    position:unset;
+  }
+  .category{
+    width:100%;
+    display:flex;
+    margin-bottom: 50px;
+    justify-content: center;
+  }
+  .category .list-items{
+    width: 90%;
+    position: relative;
+    margin-top: 50px;
+  }
+  .category .list-items h3{
+    font-size:  40px;
+    font-weight: 600;
+    font-family: 'Arial Narrow Bold';
+    margin-bottom:70px;
+  }
+  .category .list-items .card-list{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .category .list-items .card-list .card{
+    width: 200px;
+    height: 200px;
+    cursor: pointer;
+    display:block;
+    padding:10px;
+    border-radius:5px;
+    position: relative;
+    background:#40a7fc;
+    outline: 2px solid rgb(244, 246, 240);
+  }
+  .category .list-items .card-list .card img{
+    width:100px;
+    height:100px;
+    bottom: 150px;
+    left:50px;
+    object-fit:cover;
+    object-position: center;
+    background-repeat: no-repeat;
+    position:absolute;
+    border-radius:50% ;
+  }
+  .category .list-items .card-list .card .book-genres h1{
+    padding: 40px 0 10px;
+    text-align: center;
+    font-weight: bold;
+    font-size:16px;
+    font-family:'Arial';
+  }
+  .category .card .desc-book p{
+    font-size: 13px;
+    text-align:center;
+    font-weight:500;
+    margin-bottom: 20px;
+    font-family: 'cursive';
+  }
+  ::-webkit-scrollbar{
+    width: 10px;
+  }
+  ::-webkit-scrollbar-thumb{
+    border-radius: 20px;
+    background-color:rgb(85, 87, 87);
+  }
